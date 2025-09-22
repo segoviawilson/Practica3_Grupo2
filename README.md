@@ -1,8 +1,8 @@
 ## INTEGRANTES.
 | Nombre | Cargo | URL GitHub |
 |---|:---:|---:|
-| Daniel Alquinga | :technologist: Desarrollador | https://github.com/superdavi/Practica3_Grupo2 |
-| Daniel Baldeon | :technologist: Desarrollador | https://github.com/debpdhs/Practica3_Grupo2 |
+| Daniel Alquinga | :technologist: Desarrollador | https://github.com/superdavi/Practica3_Grupo2.git |
+| Daniel Baldeon | :technologist: Desarrollador | https://github.com/debpdhs/Practica3_Grupo2.git |
 | Bryan Miño | :technologist: Desarrollador | https://github.com/bmiomi/tarea3-grupo2.git |
 | Wilson Segovia | :technologist: Desarrollador | https://github.com/segoviawilson/Practica3_Grupo2.git |
 | Leonardo Tuguminago | :technologist: Desarrollador | https://github.com/ltuguminago/fastapi-app.git |
@@ -30,7 +30,8 @@ docker login -u ltuguminago
 
 **Salida Esperada**
 
-<img width="740" height="178" alt="Iniciar session en terminal DockerHub" src="https://github.com/user-attachments/assets/ae2b8967-a48c-4e87-ba05-63ef1d185a2d" />
+<img width="554" height="168" alt="image" src="https://github.com/user-attachments/assets/3d369e43-5b55-428e-8938-f1ac0f928410" />
+
 
 ### PASO 4: Construir imagen de Docker MultiStage
 
