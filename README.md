@@ -58,7 +58,7 @@ docker images
 ### PASO 6: Tagear la imagen "usuario_DockerHub/repositorio"
 
 ```bash
-docker tag hello-multistage:latest ltuguminago/fastapi-app:v1
+docker tag hello-multistage:latest segoviadoker/fastapi-app:v1
 ```
 
 **Salida Esperada**
@@ -69,7 +69,7 @@ docker tag hello-multistage:latest ltuguminago/fastapi-app:v1
 ### PASO 7: Subir imagen al DockerHub
 
 ```bash
-docker push ltuguminago/fastapi-app:v1
+docker push segoviadoker/fastapi-app:v1
 ```
 
 **Salida Esperada**
