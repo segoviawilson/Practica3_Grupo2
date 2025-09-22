@@ -107,7 +107,7 @@ DOCKERHUB_TOKEN
 
 <img width="1197" height="774" alt="secrets and varibles" src="https://github.com/user-attachments/assets/ed654656-0c58-458f-a643-62bb0fca9e69" />
 
-### PASO 12: Ingresar al siguiente directorio
+### PASO 13: Ingresar al siguiente directorio
 
 - Action/Docker image/ Configure
 
@@ -119,12 +119,12 @@ DOCKERHUB_TOKEN
 
 
 
-### PASO 13: Reemplazar el contenido del workflows actual por el contenido del archivo fastapi.ylm
+### PASO 14: Reemplazar el contenido del workflows actual por el contenido del archivo fastapi.ylm
 
 - Modificar el parametro IMAGE_NAME con el usuario del DockerHub + el nombre del repositorio.
 
 ```bash
-IMAGE_NAME: ltuguminago/fastapi-app
+IMAGE_NAME: segoviadoker/fastapi-app
 ```
 
 - Modificar el parametro push con el valor de true, para que la imagen suba al DockerHub
@@ -138,28 +138,28 @@ push: true
 <img width="554" height="340" alt="image" src="https://github.com/user-attachments/assets/594e8588-e108-4b36-b7a6-ec6721b7f994" />
 
 
-### PASO 14: Ingresar al siguiente directorio "Action", para ver ejecutandose el workflows.
+### PASO 15: Ingresar al siguiente directorio "Action", para ver ejecutandose el workflows.
 
 <img width="553" height="280" alt="image" src="https://github.com/user-attachments/assets/887157d9-a5be-43d2-9876-48e8416f9b7b" />
 
 
-### PASO 15: Ingresar al build-and-analyze
+### PASO 16: Ingresar al build-and-analyze
 
 <img width="554" height="527" alt="image" src="https://github.com/user-attachments/assets/bf275737-3dc2-4ef1-b557-94c0ab2ff683" />
 
 
-### PASO 16: Terminada la ejecución workflows, finalmente se puede revisar el reporte docker-scout-report, descargando el archivo.
+### PASO 17: Terminada la ejecución workflows, finalmente se puede revisar el reporte docker-scout-report, descargando el archivo.
 
 <img width="554" height="431" alt="image" src="https://github.com/user-attachments/assets/b8b603e7-5897-4d9f-a860-af0f3aa411fe" />
 
 <img width="554" height="377" alt="image" src="https://github.com/user-attachments/assets/1963381d-8502-48b3-8ddd-477c3fd94bfa" />
 
 
-## PASO 17. Visualizar el reporte
+## PASO 18. Visualizar el reporte
 
 <img width="554" height="358" alt="image" src="https://github.com/user-attachments/assets/4a394e36-222f-40d4-a612-2bf64b63ec4f" />
 
-## PASO 18. Revisar en DockerHub, la imagen subida.
+## PASO 19. Revisar en DockerHub, la imagen subida.
 
 <img width="554" height="351" alt="image" src="https://github.com/user-attachments/assets/e87ab904-8f6b-422f-b3fc-0903f8a77504" />
 
