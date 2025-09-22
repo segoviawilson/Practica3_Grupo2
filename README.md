@@ -41,7 +41,8 @@ docker build -t hello-multistage -f Dockerfile .
 
 **Salida Esperada**
 
-<img width="1236" height="475" alt="Construccion imagen multi-stage" src="https://github.com/user-attachments/assets/0ccd88dc-5adc-4e90-a61d-82aff8a19829" />
+<img width="553" height="252" alt="image" src="https://github.com/user-attachments/assets/5603e67a-f627-4d7e-866a-1d4f33ec1d1c" />
+
 
 ### PASO 5: Revisamos la imagen construida
 
@@ -51,7 +52,8 @@ docker images
 
 **Salida Esperada**
 
-<img width="547" height="58" alt="images" src="https://github.com/user-attachments/assets/d277c838-60b0-40a9-8d57-48fa83a9fe12" />
+<img width="554" height="129" alt="image" src="https://github.com/user-attachments/assets/394cac2b-4e18-4b51-a283-8b94fb3c51e6" />
+
 
 ### PASO 6: Tagear la imagen "usuario_DockerHub/repositorio"
 
@@ -61,7 +63,8 @@ docker tag hello-multistage:latest ltuguminago/fastapi-app:v1
 
 **Salida Esperada**
 
-<img width="812" height="176" alt="Tager imagen" src="https://github.com/user-attachments/assets/e0156856-66c7-4d47-8304-3d0b9b8264de" />
+<img width="554" height="132" alt="image" src="https://github.com/user-attachments/assets/f1bf0c5c-5a95-48a7-a790-e3f66b735fee" />
+
 
 ### PASO 7: Subir imagen al DockerHub
 
@@ -71,25 +74,29 @@ docker push ltuguminago/fastapi-app:v1
 
 **Salida Esperada**
 
-<img width="786" height="231" alt="subir imagen al dockerHub" src="https://github.com/user-attachments/assets/f133972b-e90d-42d7-94b5-0585c47829d4" />
+<img width="553" height="170" alt="image" src="https://github.com/user-attachments/assets/767d4095-fc44-42f6-814e-4fb568c1050b" />
+
 
 ### PASO 8: Revizar la imagen subida en el repositorio de DockerHub
 
-<img width="924" height="681" alt="revisamos imagen subida en el dockerhub" src="https://github.com/user-attachments/assets/8ba65d1e-c85d-47f0-a5b7-266be99fd76f" />
+<img width="554" height="323" alt="image" src="https://github.com/user-attachments/assets/47960375-54f3-4eaa-ae66-1bab8e46f04a" />
+
 
 ### PASO 9: Iniciar sessión en GitHub y crear repositorio
 
-<img width="909" height="791" alt="Crear repositorio GitHub" src="https://github.com/user-attachments/assets/c3251ee3-1a85-4bab-b553-c938fcc098c1" />
+<img width="554" height="285" alt="image" src="https://github.com/user-attachments/assets/d9660a02-3237-4e88-9066-814b89bc9799" />
 
-### PASO 9: El repositorio debe contener los siguientes archivos
 
-<img width="222" height="185" alt="structura fastapi" src="https://github.com/user-attachments/assets/1613fcad-19fd-4b3a-adfe-088c9fec9182" />
+### PASO 10: El repositorio debe contener los siguientes archivos
 
-### PASO 10: Ingresar al siguiente directorio
+<img width="554" height="317" alt="image" src="https://github.com/user-attachments/assets/f3769194-bd69-4179-be32-ce28f036f64c" />
+
+
+### PASO 11: Ingresar al siguiente directorio
 
 - Setting/secrets and variables/Actions
 
-### PASO 11. Crear las variables con las credenciales deL DockerHub
+### PASO 12. Crear las variables con las credenciales deL DockerHub
 
 ```bash
 DOCKERHUB_USERNAME
@@ -106,7 +113,10 @@ DOCKERHUB_TOKEN
 
 **Salida Esperada**
 
-<img width="1170" height="558" alt="Docker images configure" src="https://github.com/user-attachments/assets/5517d68b-5aae-416e-ac3e-4457281e8391" />
+<img width="554" height="353" alt="image" src="https://github.com/user-attachments/assets/0a8516c5-2dca-4cce-b7a8-1372bb5378b0" />
+
+
+
 
 
 ### PASO 13: Reemplazar el contenido del workflows actual por el contenido del archivo fastapi.ylm
@@ -125,29 +135,34 @@ push: true
 
 - Guardar el archivo con el nombre "scout.yml"
 
-<img width="893" height="1070" alt="workflows" src="https://github.com/user-attachments/assets/b983d468-f1e5-4488-b8ed-f765a9a69fe8" />
+<img width="554" height="340" alt="image" src="https://github.com/user-attachments/assets/594e8588-e108-4b36-b7a6-ec6721b7f994" />
+
 
 ### PASO 14: Ingresar al siguiente directorio "Action", para ver ejecutandose el workflows.
 
-
-<img width="1221" height="488" alt="Captura de pantalla de 2025-09-21 14-29-17" src="https://github.com/user-attachments/assets/52cade66-e26a-4a23-9afe-0157a406a816" />
+<img width="553" height="280" alt="image" src="https://github.com/user-attachments/assets/887157d9-a5be-43d2-9876-48e8416f9b7b" />
 
 
 ### PASO 15: Ingresar al build-and-analyze
 
-<img width="1214" height="1210" alt="Captura de pantalla de 2025-09-21 14-30-30" src="https://github.com/user-attachments/assets/364820c2-fdb8-419f-9639-fa7b52d2cf1e" />
+<img width="554" height="527" alt="image" src="https://github.com/user-attachments/assets/bf275737-3dc2-4ef1-b557-94c0ab2ff683" />
+
 
 ### PASO 16: Terminada la ejecución workflows, finalmente se puede revisar el reporte docker-scout-report, descargando el archivo.
 
-<img width="878" height="1159" alt="Captura de pantalla de 2025-09-21 14-31-30" src="https://github.com/user-attachments/assets/b5836229-d717-4ec9-8ada-08c921f327ee" />
+<img width="554" height="431" alt="image" src="https://github.com/user-attachments/assets/b8b603e7-5897-4d9f-a860-af0f3aa411fe" />
+
+<img width="554" height="377" alt="image" src="https://github.com/user-attachments/assets/1963381d-8502-48b3-8ddd-477c3fd94bfa" />
+
 
 ## PASO 17. Visualizar el reporte
 
-<img width="664" height="183" alt="Captura de pantalla de 2025-09-21 14-32-17" src="https://github.com/user-attachments/assets/8297cf96-6ce2-44e4-b294-4dcbb2b1e556" />
+<img width="554" height="358" alt="image" src="https://github.com/user-attachments/assets/4a394e36-222f-40d4-a612-2bf64b63ec4f" />
 
 ## PASO 18. Revisar en DockerHub, la imagen subida.
 
-<img width="962" height="744" alt="Captura de pantalla de 2025-09-21 14-46-32" src="https://github.com/user-attachments/assets/7724459b-02aa-4bd7-a5fa-25c56670a7b4" />
+<img width="554" height="351" alt="image" src="https://github.com/user-attachments/assets/e87ab904-8f6b-422f-b3fc-0903f8a77504" />
+
 
 
 # 3. Conclusiones
