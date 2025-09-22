@@ -25,7 +25,7 @@ Con base en el laboratorio de fastapi-app, deberan subir la imagen que le corres
 ### PASO 3: En la termina, iniciar sessión con las credenciales de DockerHub
 
 ```bash
-docker login -u ltuguminago
+docker login -u segoviadoker
 ```
 
 **Salida Esperada**
