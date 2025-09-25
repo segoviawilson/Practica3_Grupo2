@@ -174,3 +174,14 @@ push: true
 - Docker Scout proporciona visibilidad completa sobre las vulnerabilidades en todas las capas de la imagen, facilitando la identificación de dependencias problemáticas en la aplicación FastAPI.
 
 - GitHub Actions proporciona registros detallados de cada ejecución, creando un historial auditable de los estados de seguridad de la aplicación a lo largo del tiempo.
+- El análisis realizado con Docker Scout identificó que la imagen utilizada contiene un total de 12 paquetes vulnerables, sumando 24 vulnerabilidades en total. Esto evidencia que incluso imágenes aparentemente funcionales pueden incluir librerías o dependencias con problemas de seguridad que representan un riesgo potencial. La herramienta permitió obtener un informe detallado en formato JSON, lo cual facilita la integración con procesos de auditoría, monitoreo o pipelines de CI/CD. Este resultado confirma la importancia de aplicar análisis de vulnerabilidades de manera continua en el ciclo de vida del desarrollo y despliegue de aplicaciones en contenedores.
+  
+- Se recomienda no utilizar directamente imágenes vulnerables en entornos de producción. Como buenas prácticas:
+
+1. Actualizar dependencias y paquetes de la imagen, buscando versiones corregidas que mitiguen las vulnerabilidades detectadas.
+
+2. Usar imágenes base oficiales y confiables (por ejemplo, Alpine o distribuciones minimalistas), ya que suelen recibir actualizaciones de seguridad frecuentes.
+
+3. Automatizar los análisis de seguridad integrando Docker Scout u otras herramientas  en el pipeline de CI/CD para detectar vulnerabilidades antes del despliegue.
+
+4. Revisar periódicamente los reportes JSON generados, priorizando la corrección de vulnerabilidades críticas o altas para reducir la superficie de ataque.
